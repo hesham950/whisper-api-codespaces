@@ -1,0 +1,7 @@
+openai-whisper
+fastapi>=0.104.0
+uvicorn[standard]
+python-multipart
+psutil
+aiofiles
+python-dotenv

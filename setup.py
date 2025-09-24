@@ -39,6 +39,10 @@ def main():
     print(f"📁 Temp directory created: {temp_dir}")
     
     # Install/upgrade packages
+    print("\n📦 Installing system dependencies...")
+    run_command("sudo apt update", "Updating package lists")
+    run_command("sudo apt install -y ffmpeg", "Installing ffmpeg")
+    
     packages = [
         "pip install --upgrade pip",
         "pip install openai-whisper",
